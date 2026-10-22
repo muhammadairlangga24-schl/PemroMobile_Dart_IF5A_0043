@@ -5,4 +5,22 @@ void main(){
   for (var n in nilai){
     total += n;
   }
+
+double rataRata = total / nilai.length;
+
+String grade;
+
+if(rataRata >= 90 ){
+  grade  = 'A' ;
+} else if (rataRata >= 80){
+  grade = 'B';
+} else if (rataRata >= 70){
+  grade = 'C';
+} else {
+  grade = 'D';
+}
+
+print('nilai : $nilai');
+print('rata-rata : $rataRata');
+print('grade : $grade');
 }
